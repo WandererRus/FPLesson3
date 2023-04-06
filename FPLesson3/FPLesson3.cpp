@@ -2,15 +2,24 @@
 //
 
 #include <iostream>
+
 using namespace std;
 int main()
 {
+    //4 lab 1 task
     setlocale(LC_ALL, "Russian");
     int year = 0;
     cin >> year;
 
-    cout << "В этом году " << 365 + (!(bool)(year%4) && (bool)(year%100) || !(bool)(year%400)) << " дней." << endl;
+    cout << "В этом году " << 365 + ( !(bool)(year % 4) && (bool)(year % 100) || !(bool)(year % 400)) << " дней." << endl;
 
+    //4 lab 5 task
+
+    cout << "Введите радиус шара. Пример 4.34 " << endl;
+    double radius = 0.0;
+    cin >> radius;
+    double V = (4 * 3.14 * radius * radius * radius)/3;
+    cout << "Объем вашего шара равен " << V << endl;
     return 0;
 }
 
